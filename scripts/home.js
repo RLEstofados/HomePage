@@ -1,13 +1,13 @@
-let staticHeight = {'fados/index': 500,'fados/inicio': 500, 'fados/artigos': 500, 'fados/sobre': 580,'fados/contato': 500, 'fados/duvidas': 500};
-let heightPhone = {'fados/index': 500,'fados/inicio': 500, 'fados/artigos': 500, 'fados/sobre': 990,'fados/contato': 800, 'fados/duvidas': 630};
+let staticHeight = {'fados/index': 500,'fados/inicio': 500, 'fados/servicos': 500, 'fados/sobre': 580,'fados/contato': 500, 'fados/duvidas': 500};
+let heightPhone = {'fados/index': 500,'fados/inicio': 500, 'fados/servicos': 500, 'fados/sobre': 990,'fados/contato': 800, 'fados/duvidas': 630};
 //aciona o mudanca de página com o click do menu
 let ActionMenu = {
     "rl estofados": () => {
         document.querySelector("iframe").src = "inicio.html";
         resizing();
     },
-    "artigos": () => {
-        document.querySelector("iframe").src = "artigos.html";
+    "serviços": () => {
+        document.querySelector("iframe").src = "servicos.html";
         resizing();
     },
     "sobre": () => {

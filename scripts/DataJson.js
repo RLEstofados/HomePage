@@ -1,5 +1,5 @@
 //############# LISTA DE ARTIGOS PARA A PÁGINA #################
-let ListArtigos = [
+let ListaServicos = [
     {
         "title": "Dúvidas sobre LGPD",
         "subtitle": "Dúvidas sobre LGPD",
