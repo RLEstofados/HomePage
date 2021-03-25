@@ -4,7 +4,8 @@ let images  = [
     "image/cadeira2.jpg",
     "image/home8.jpg",
     "image/home7.jpg",
-    "image/home3.jpg"
+    "image/home3.jpg",
+    "image/cadeira9.jpg"
 ], 
 indexImage = 0;
 

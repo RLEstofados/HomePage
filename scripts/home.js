@@ -27,12 +27,14 @@ let ActionMenu = {
 // Métodos de alteração do menu
 let Menu = {
     "open": () => {
-        document.querySelectorAll(".menu-item").forEach((element) => {
-                element.hidden = false;
+        let elements = document.querySelectorAll(".menu-item");
+        elements.forEach((element) => {
+            element.hidden = false;
         });
     },
     "close": () => {
-        document.querySelectorAll(".menu-item").forEach((element) => {
+        let elements = document.querySelectorAll(".menu-item");
+        elements.forEach((element) => {
             if(element.textContent != "RL ESTOFADOS"){
                 element.hidden = true;
             }
