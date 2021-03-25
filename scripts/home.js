@@ -1,24 +1,24 @@
-let staticHeight = {'Devs/inicio': 500, 'Devs/artigos': 500, 'Devs/sobre': 580,'Devs/contato': 500, 'Devs/duvidas': 500};
-let heightPhone = {'Devs/inicio': 500, 'Devs/artigos': 500, 'Devs/sobre': 990,'Devs/contato': 800, 'Devs/duvidas': 630};
+let staticHeight = {'fados/index': 500,'fados/inicio': 500, 'fados/artigos': 500, 'fados/sobre': 580,'fados/contato': 500, 'fados/duvidas': 500};
+let heightPhone = {'fados/index': 500,'fados/inicio': 500, 'fados/artigos': 500, 'fados/sobre': 990,'fados/contato': 800, 'fados/duvidas': 630};
 //aciona o mudanca de página com o click do menu
 let ActionMenu = {
-    "DEV FULL": () => {
+    "rl estofados": () => {
         document.querySelector("iframe").src = "inicio.html";
         resizing();
     },
-    "Artigos": () => {
+    "artigos": () => {
         document.querySelector("iframe").src = "artigos.html";
         resizing();
     },
-    "Sobre": () => {
+    "sobre": () => {
         document.querySelector("iframe").src = "sobre.html";
         resizing();
     },
-    "Contato": () => {
+    "contato": () => {
         document.querySelector("iframe").src = "contato.html";
         resizing();
     },
-    "Dúvidas": () => {
+    "dúvidas": () => {
         document.querySelector("iframe").src = "duvidas.html";
         resizing();
     }
@@ -33,7 +33,7 @@ let Menu = {
     },
     "close": () => {
         document.querySelectorAll(".menu-item").forEach((element) => {
-            if(element.textContent != "DEV FULL"){
+            if(element.textContent != "RL ESTOFADOS"){
                 element.hidden = true;
             }
         });
@@ -43,7 +43,7 @@ let Menu = {
     }
 }
 document.querySelectorAll(".menu-item").forEach((element) => {
-    element.addEventListener("click", () => {actionMenu(element.textContent);});
+    element.addEventListener("click", () => {actionMenu(element.textContent.toLowerCase());});
 });
 
 function actionMenu(text){
@@ -56,7 +56,7 @@ window.addEventListener("resize", resizing);
 function resizing(){
     let size = window.innerWidth;
     let iframe = document.querySelector("iframe");
-    let page = iframe.src.substring(iframe.src.indexOf("Devs/"),iframe.src.indexOf(".html"));
+    let page = iframe.src.substring(iframe.src.indexOf("fados/"),iframe.src.indexOf(".html"));
     if(size > 950){
         iframe.height = staticHeight[page];
     }else {
@@ -84,6 +84,10 @@ function resizeMenu(size){
     }
 }
 
+document.querySelector("iframe").addEventListener("load", () => {
+    resizeMenu(window.innerWidth);
+    resizing();
+});
 
 
 

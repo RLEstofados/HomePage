@@ -3,17 +3,15 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: rgb(134, 134, 134);
-}
-body {
-    background-color: rgb(255, 255, 255);
-    padding: 4vh 5%;
+    color: rgb(148, 148, 148);
+    text-shadow: 0px 0px 3px rgba(0,0,0,.2);
 }
 h1,h2,h3,h4 {
     margin: 5px 12px;
+    text-shadow: 0px 0px 3px rgba(0,0,0,.2);
 }
 h5,h6 {
-    color:rgb(160, 160, 160);
+    color:rgb(129, 129, 129);
     margin: 5px 12px;
 }
 hr {
@@ -22,6 +20,13 @@ hr {
 }
 
 @media screen and (min-width: 900px){
+    body {
+        background-image: url('../image/cadeira2.jpg');
+        background-position: 50%;
+        background-size: 1300px;
+        padding: 4vh 5%;
+        transition: 2s;
+    }
     .search-area {
         width: 45%;
         float: right;
@@ -31,6 +36,13 @@ hr {
     }
 }
 @media screen and (max-width: 900px){
+    body {
+        background-image: url('../image/home8.jpg');
+        background-position: 70%;
+        background-size: 650px;
+        padding: 4vh 5%;
+        transition: 2s;
+    }
     .search-area {
         width: 100%;
         height: 80px;
@@ -46,6 +58,7 @@ hr {
     border-radius: 5px;
     outline: none;
     font-size: 16px;
+    background-color: rgba(255, 255, 255, .4);
     color:rgb(160, 160, 160);
 }
 .search .icon {
@@ -74,4 +87,7 @@ hr {
     color: #345574;
     font-size: 50px;
     font-weight: bold;
+}
+.sub-title {
+    color: #626262;
 }
