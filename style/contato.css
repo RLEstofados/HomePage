@@ -47,12 +47,13 @@ h5,h6 {
     margin: auto;
 }
 #github{
-    background: url('../image/github.png');
+    background: url('../image/whatsapp.png');
     background-size: 100%;
     background-position: 50%;
+    border-radius: 20%;
 }
 #linkedin{
-    background: url('../image/linkedin.png');
+    background: url('../image/gmail.png');
     background-size: 100%;
     background-position: 50%;
 }

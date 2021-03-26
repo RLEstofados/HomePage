@@ -1,57 +1,39 @@
 //############# LISTA DE ARTIGOS PARA A PÁGINA #################
-let ListArtigos = [
+let ListaServicos = [
     {
-        "title": "Dúvidas sobre LGPD",
-        "subtitle": "Dúvidas sobre LGPD",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "title": "Conserto de Cadeiras",
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/conserto03.jpg"
     },
     {
-        "title": "Banco de dados",
-        "subtitle": "Dúvidas sobre LGPD",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "title": "Bancos de Veículos",
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/banco01.jpg"
     },
     {
         "title": "Gerenciamento de memória",
-        "subtitle": "Dúvidas sobre LGPD",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/conserto04.jpg"
     },
     {
-        "title": "Gerenciamento de memória",
-        "subtitle": "Dúvidas sobre LGPD",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "title": "Troca de Estofado",
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/conserto.jpg"
     },
     {
-        "title": "Gerenciamento de memória",
-        "subtitle": "Dúvidas sobre LGPD",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "title": "Construção de sofá e pulf",
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/construir.jpg"
     },
     {
-        "title": "Cubo com CSS 3D",
-        "subtitle": "Construindo um cubo tridimenssional com CSS e HTML",
-        "page": "",
-        "text": "",
-        "referencia": "",
-        "height": "",
-        "fonte": ""
+        "title": "Lavagem a Seco",
+        "subtitle": "",
+        "id": "id01",
+        "background": "image/lavagem.jpg"
     }
 ]
