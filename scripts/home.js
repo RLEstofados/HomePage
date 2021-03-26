@@ -58,7 +58,7 @@ window.addEventListener("resize", resizing);
 function resizing(){
     let size = window.innerWidth;
     let iframe = document.querySelector("iframe");
-    let page = iframe.src.substring(iframe.src.indexOf("fados/"),iframe.src.indexOf(".html")).toLowerCase();
+    let page = iframe.src.substring(iframe.src.indexOf("Pages/"),iframe.src.indexOf(".html")).toLowerCase();
     if(size > 950){
         iframe.height = staticHeight[page];
     }else {
