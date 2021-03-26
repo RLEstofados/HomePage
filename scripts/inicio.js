@@ -9,7 +9,7 @@ let images  = [
 ], 
 indexImage = 0;
 
-function slideTransition(e){
+function slideTransition(){
     let element = document.querySelector("body");
     if(indexImage == images.length){
         indexImage = 0;
@@ -19,5 +19,5 @@ function slideTransition(e){
         indexImage++;
     }
 }
-console.log("inicio");
+
 setInterval(slideTransition, 5000);
