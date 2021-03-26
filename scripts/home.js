@@ -1,5 +1,5 @@
-let staticHeight = {'fados/index': 500,'fados/inicio': 500, 'fados/servicos': 800, 'fados/sobre': 780,'fados/contato': 500, 'fados/duvidas': 500};
-let heightPhone = {'fados/index': 500,'fados/inicio': 500, 'fados/servicos': 1800, 'fados/sobre': 1100,'fados/contato': 800, 'fados/duvidas': 630};
+let staticHeight = {'page/index': 500,'page/inicio': 500, 'page/servicos': 800, 'page/sobre': 780,'page/contato': 500, 'page/duvidas': 500};
+let heightPhone = {'page/index': 500,'page/inicio': 500, 'page/servicos': 1800, 'page/sobre': 1100,'page/contato': 800, 'page/duvidas': 630};
 //aciona o mudanca de página com o click do menu
 let ActionMenu = {
     "rl estofados": () => {
@@ -58,7 +58,7 @@ window.addEventListener("resize", resizing);
 function resizing(){
     let size = window.innerWidth;
     let iframe = document.querySelector("iframe");
-    let page = iframe.src.substring(iframe.src.indexOf("Pages/"),iframe.src.indexOf(".html")).toLowerCase();
+    let page = iframe.src.substring(iframe.src.indexOf("Page/"),iframe.src.indexOf(".html")).toLowerCase();
     if(size > 950){
         iframe.height = staticHeight[page];
     }else {
