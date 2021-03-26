@@ -13,7 +13,7 @@ let ListaServicos = [
         "background": "image/banco01.jpg"
     },
     {
-        "title": "Gerenciamento de memória",
+        "title": "Reforma de sofá",
         "subtitle": "",
         "id": "id01",
         "background": "image/conserto04.jpg"
