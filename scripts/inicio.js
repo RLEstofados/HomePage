@@ -11,6 +11,7 @@ indexImage = 0;
 
 function slideTransition(){
     let element = document.querySelector("body");
+    element.style.transition = "1s";
     if(indexImage == images.length){
         indexImage = 0;
         element.style.backgroundImage = "url('"+ images[indexImage] +"');";
