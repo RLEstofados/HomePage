@@ -1,5 +1,5 @@
 let staticHeight = {'page/index': 500,'page/inicio': 500, 'page/servicos': 800, 'page/sobre': 780,'page/contato': 500, 'page/duvidas': 500};
-let heightPhone = {'page/index': 500,'page/inicio': 500, 'page/servicos': 1800, 'page/sobre': 1200,'page/contato': 800, 'page/duvidas': 630};
+let heightPhone = {'page/index': 500,'page/inicio': 500, 'page/servicos': 1800, 'page/sobre': 1250,'page/contato': 800, 'page/duvidas': 630};
 //aciona o mudanca de página com o click do menu
 let ActionMenu = {
     "rl estofados": () => {
