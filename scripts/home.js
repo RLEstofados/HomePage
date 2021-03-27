@@ -4,23 +4,18 @@ let heightPhone = {'page/index': 500,'page/inicio': 500, 'page/servicos': 1800, 
 let ActionMenu = {
     "rl estofados": () => {
         document.querySelector("iframe").src = "inicio.html";
-        resizing();
     },
     "serviços": () => {
         document.querySelector("iframe").src = "servicos.html";
-        resizing();
     },
     "sobre": () => {
         document.querySelector("iframe").src = "sobre.html";
-        resizing();
     },
     "contato": () => {
         document.querySelector("iframe").src = "contato.html";
-        resizing();
     },
     "dúvidas": () => {
         document.querySelector("iframe").src = "duvidas.html";
-        resizing();
     }
 };
 
@@ -67,6 +62,7 @@ function resizing(){
         iframe.height = staticHeight[page];
     }else {
         iframe.height = heightPhone[page];
+        document.getElementById("hidden").hidden = true;
     }
     resizeMenu(size);
 }
